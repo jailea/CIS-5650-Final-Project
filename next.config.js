@@ -1,18 +1,13 @@
 const path = require('path');
 const fs = require('fs');
-const execSync = require("child_process").execSync;
 
 const BASE_PATH = process.env.BASE_PATH || '';
-const lastCommitCommand = "git rev-parse HEAD";
 
 module.exports = {
   output: 'standalone',
   basePath: BASE_PATH,
   compress: true,
   reactStrictMode: false,
-  async generateBuildId() {
-    return execSync(lastCommitCommand).toString().trim();
-  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|webm|tif|js)$/i,

@@ -85,6 +85,9 @@ Permance of our program depends on how large the resolution of the heightmap is.
 
 [Milestone 3 Slide](https://docs.google.com/presentation/d/1xQUIeNf7sn4tsLwD-Bp2S6V0gC3YropOTHALUkqWU24/edit?usp=sharing)
 
+## Initial Pitch Slide:
+[Pitch Slide](https://uluyek.github.io/CIS-5650-Final-Project/samples/snowAccumulation)
+
 ### Future Work to be completed:
 - Higher resolution snow simulation
 - Importing of .tiff files and weather data

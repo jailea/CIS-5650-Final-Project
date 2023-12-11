@@ -10,7 +10,7 @@ module.exports = {
   reactStrictMode: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push({
-      test: /\.(png|jpe?g|gif|webm|tif)$/i,
+      test: /\.(png|jpe?g|gif|webm|tif|js)$/i,
       type: 'asset/resource',
       generator: {
         filename: 'static/[path][name].[hash][ext]'

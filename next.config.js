@@ -9,7 +9,7 @@ module.exports = {
   output: 'standalone',
   basePath: BASE_PATH,
   compress: true,
-  reactStrictMode: true,
+  reactStrictMode: false,
   async generateBuildId() {
     return execSync(lastCommitCommand).toString().trim();
   },
